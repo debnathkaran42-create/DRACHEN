@@ -1,0 +1,277 @@
+/* ========================= */
+/* style.css */
+/* ========================= */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+body{
+background:#040404;
+color:white;
+font-family:'Inter',sans-serif;
+overflow-x:hidden;
+}
+
+.noise{
+position:fixed;
+width:100%;
+height:100%;
+background-image:url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+opacity:0.08;
+pointer-events:none;
+z-index:999;
+}
+
+section{
+padding:80px 22px;
+border-bottom:1px solid rgba(255,255,255,0.05);
+}
+
+.hero{
+height:100vh;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.present{
+font-size:10px;
+letter-spacing:4px;
+opacity:0.5;
+margin-bottom:18px;
+}
+
+.logo{
+font-family:'Cinzel',serif;
+font-size:42px;
+letter-spacing:7px;
+font-weight:900;
+margin-bottom:15px;
+}
+
+.tagline{
+font-size:13px;
+letter-spacing:3px;
+opacity:0.6;
+margin-bottom:25px;
+}
+
+.divider{
+width:120px;
+height:1px;
+background:white;
+opacity:0.2;
+margin-bottom:25px;
+}
+
+.summary{
+max-width:300px;
+line-height:1.9;
+font-size:14px;
+opacity:0.75;
+}
+
+h2{
+font-family:'Cinzel',serif;
+font-size:28px;
+letter-spacing:4px;
+margin-bottom:35px;
+}
+
+.countdown-section{
+text-align:center;
+}
+
+.timer{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:15px;
+}
+
+.time-box{
+border:1px solid rgba(255,255,255,0.08);
+padding:25px 10px;
+background:rgba(255,255,255,0.02);
+}
+
+.time-box span{
+font-size:30px;
+font-family:'Cinzel',serif;
+display:block;
+margin-bottom:10px;
+}
+
+.time-box p{
+font-size:10px;
+letter-spacing:3px;
+opacity:0.5;
+}
+
+.release-date{
+margin-top:30px;
+font-size:14px;
+letter-spacing:4px;
+opacity:0.6;
+}
+
+.story p,
+.world p,
+.yoshiro p{
+line-height:2;
+font-size:15px;
+opacity:0.75;
+}
+
+.quote{
+font-family:'Cinzel',serif;
+font-size:24px;
+line-height:1.7;
+margin-bottom:25px;
+}
+
+.card{
+border:1px solid rgba(255,255,255,0.08);
+padding:25px;
+margin-bottom:18px;
+background:rgba(255,255,255,0.02);
+}
+
+.card p{
+font-size:10px;
+letter-spacing:3px;
+opacity:0.5;
+margin-bottom:10px;
+}
+
+.card h3{
+font-family:'Cinzel',serif;
+font-size:22px;
+line-height:1.7;
+}
+
+.read{
+text-align:center;
+}
+
+.read-btn{
+display:block;
+padding:18px;
+margin-bottom:15px;
+border:1px solid rgba(255,255,255,0.1);
+text-decoration:none;
+color:white;
+letter-spacing:4px;
+font-size:12px;
+transition:0.4s;
+}
+
+.read-btn:hover{
+background:white;
+color:black;
+}
+
+.small{
+margin-top:20px;
+font-size:11px;
+opacity:0.4;
+}
+
+.credits{
+text-align:center;
+}
+
+.credit-box{
+margin-bottom:40px;
+}
+
+.credit-box h3{
+font-family:'Cinzel',serif;
+font-size:22px;
+letter-spacing:3px;
+margin-bottom:10px;
+}
+
+.credit-box p{
+opacity:0.6;
+letter-spacing:2px;
+font-size:12px;
+}
+
+footer{
+padding:60px 20px;
+text-align:center;
+}
+
+footer h2{
+font-size:32px;
+margin-bottom:10px;
+}
+
+footer p{
+opacity:0.5;
+font-size:12px;
+}
+
+.popup{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.92);
+display:none;
+justify-content:center;
+align-items:center;
+z-index:9999;
+padding:20px;
+}
+
+.popup-content{
+border:1px solid rgba(255,255,255,0.08);
+padding:40px 25px;
+text-align:center;
+background:#080808;
+width:100%;
+max-width:340px;
+}
+
+.popup-content h2{
+font-size:24px;
+margin-bottom:20px;
+}
+
+.popup-content p{
+line-height:2;
+opacity:0.7;
+margin-bottom:30px;
+}
+
+.popup-btn{
+display:inline-block;
+padding:15px 35px;
+border:1px solid white;
+color:white;
+text-decoration:none;
+letter-spacing:3px;
+font-size:12px;
+}
+
+@media(min-width:768px){
+
+body{
+display:flex;
+justify-content:center;
+}
+
+section,
+footer{
+width:430px;
+}
+
+}
